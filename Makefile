@@ -5,7 +5,7 @@ NAME = push_swap.a
 CFLAGS = -Wall -Werror -Wextra
 
 # Sources
-SRCS = ./*.c
+SRCS = SRC/push_swap.c SRC/check_error_free.c SRC/path_to_sort.c SRC/algo.c SRC/utils.c SRC/utils_extra.c SRC/push.c SRC/swap.c SRC/rotate.c SRC/reverse.c 
 
 # Objects
 OBJS = $(SRCS:.c=.o)
@@ -24,9 +24,16 @@ $(NAME): $(OBJS)
 
 # Take .o, generate .c
 %.o: %.c $(HD) Makefile
-	cc $(CFLAGS) -c $< -o $@
+	gcc $(CFLAGS) -c $< -o $@
 
+# Executable PUSH_SWAP
+ex:
+	gcc -g -Werror -Wextra -Wall $(SRCS) ./LIBFT/libft.a -o push_swap
 
+# Makfile LIBFT+extras
+libft:
+	cd ./LIBFT && make
+	
 # Clean .o files
 clean:
 	rm -f $(OBJS)
@@ -39,4 +46,4 @@ fclean: clean
 re: fclean all
 	
 # Always execute this rules, good practice
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re ex libft

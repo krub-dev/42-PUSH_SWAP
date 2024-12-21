@@ -6,7 +6,7 @@
 /*   By: frubio-i <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/29 17:52:10 by frubio-i          #+#    #+#             */
-/*   Updated: 2024/07/26 23:43:32 by frubio-i         ###   ########.fr       */
+/*   Updated: 2024/11/25 18:33:22 by frubio-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static size_t	ft_words_count(const char *s, char c)
 	return (wcount);
 }
 
-static void	ft_free_mem(char **str)
+void	ft_free_mem(char **str)
 {
 	size_t	i;
 
@@ -113,7 +113,7 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	char const	s[] = "hello!";
+	char const	s[] = "0+  +1 --2 3 _4 5 ,6 ..7. .!8 19";
 	char		c = ' ';
 	char		**split;
 	int		wcount;
@@ -135,8 +135,6 @@ int	main(void)
 		wcount--;
 		i++;
 	}
-	
 	ft_free_mem(split);
-	
 	return (0);
 }*/
