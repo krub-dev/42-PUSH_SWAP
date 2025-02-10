@@ -4,7 +4,7 @@ Descripción:
 
 Proyecto que tiene como objetivo ordenar una lista de números enteros utilizando un conjunto limitado de operaciones en dos stacks (a y b). 
 
-Se debe implementar un algoritmo de ordenación eficiente teniendo en cuenta la complejidad computacional (Big O notation).
+Se debe implementar un algoritmo de ordenación eficiente teniendo en cuenta su complejidad (Big O notation).
 
 ESTRUCTURA DEL PROYECTO
 
@@ -36,7 +36,7 @@ rotate.c: Funciones de rotación de elementos.
 
 reverse_rotate.c: Funciones de rotación inversa.
 
-REGLAS DEL JUEGO
+REGLAS DEL PROYECTO
 
 Se trabaja con dos stacks (a y b).
 
