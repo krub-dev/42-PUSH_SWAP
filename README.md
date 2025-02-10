@@ -49,6 +49,7 @@ Se procesa cada número analizando sus bits y distribuyéndolos en los stacks de
 ## Bonus
 
 Se incluye un **checker** que verifica si la secuencia de instrucciones generada realmente ordena el stack correctamente.
+La parte de bonus consiste en hacer tu propio **checker**.
 
 ## Consideraciones Finales
 
