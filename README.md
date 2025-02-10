@@ -1,65 +1,56 @@
-PUSH_SWAP
+# PUSH_SWAP
 
-Descripción:
+## Descripción
 
-Proyecto que tiene como objetivo ordenar una lista de números enteros utilizando un conjunto limitado de operaciones en dos stacks (a y b). 
+Proyecto que tiene como objetivo ordenar una lista de números enteros utilizando un conjunto limitado de operaciones en dos stacks (`a` y `b`).
 
-Se debe implementar un algoritmo de ordenación eficiente teniendo en cuenta su complejidad (Big O notation).
+Se debe implementar un algoritmo de ordenación eficiente teniendo en cuenta su complejidad (*Big O notation*).
 
-ESTRUCTURA DEL PROYECTO
+🇬🇧 [Read in English](README_EN.md)
 
-Makefile:
+## Estructura del Proyecto
 
-Reglas: all, clean, fclean, re.
+### Makefile
 
-No debe relinkear los archivos en ningún caso.
+- Reglas: `all`, `clean`, `fclean`, `re`.
+- No debe relinkear los archivos en ningún caso.
 
-ARCHIVOS DE FUNCIONES
+## Archivos de Funciones
 
-push_swap.c: Función principal del programa.
+- `push_swap.c`: Función principal del programa.
+- `check_error_free.c`: Validaciones y liberación de memoria.
+- `utils.c`: Funciones auxiliares para manejar listas.
+- `utils_extra.c`: Funciones de utilidad general.
+- `path_to_sort.c`: Algoritmos para ordenar pequeñas listas.
+- `algo.c`: Implementación del algoritmo de ordenación (*Radix*).
+- `push.c`: Funciones para mover elementos entre stacks.
+- `swap.c`: Funciones de intercambio.
+- `rotate.c`: Funciones de rotación de elementos.
+- `reverse_rotate.c`: Funciones de rotación inversa.
 
-check_error_free.c: Validaciones y liberación de memoria.
+## Reglas del Proyecto
 
-utils.c: Funciones auxiliares para manejar listas.
+- Se trabaja con dos stacks (`a` y `b`).
+- Inicialmente, `a` contiene los números desordenados y `b` está vacío.
+- El objetivo es ordenar `a` en orden ascendente con el menor número de movimientos posibles.
+- Solo se pueden usar un conjunto limitado de operaciones (`sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`).
 
-utils_extra.c: Funciones de utilidad general.
+## Algoritmo Utilizado
 
-path_to_sort.c: Algoritmos para ordenar pequeñas listas.
-
-algo.c: Implementación del algoritmo de ordenación (Radix).
-
-push.c: Funciones para mover elementos entre stacks.
-
-swap.c: Funciones de intercambio.
-
-rotate.c: Funciones de rotación de elementos.
-
-reverse_rotate.c: Funciones de rotación inversa.
-
-REGLAS DEL PROYECTO
-
-Se trabaja con dos stacks (a y b).
-
-Inicialmente, a contiene los números desordenados y b está vacío.
-
-El objetivo es ordenar a en orden ascendente con el menor número de movimientos posibles.
-
-Solo se pueden usar un conjunto limitado de operaciones (sa, sb, ss, pa, pb, ra, rb, rr, rra, rrb, rrr).
-
-ALGORITMO UTILIZADO
-
-Se ha implementado Radix Sort optimizado con operadores bitwise para reducir la cantidad de buckets y mejorar el rendimiento. 
+Se ha implementado **Radix Sort** optimizado con operadores bitwise para reducir la cantidad de buckets y mejorar el rendimiento.
 
 Se procesa cada número analizando sus bits y distribuyéndolos en los stacks de manera eficiente hasta lograr un orden ascendente.
 
-FUNCIONES PERMITIDAS
+## Funciones Permitidas
 
-read, write, malloc, free, exit.
-ft_printf y cualquier otra función de la libft.
+- `read`, `write`, `malloc`, `free`, `exit`.
+- `ft_printf` y cualquier otra función de la **libft**.
 
-Se incluye un checker que verifica si la secuencia de instrucciones generada realmente ordena el stack correctamente.
+## Bonus
 
-CONSIDERACIONES FINALES
+Se incluye un **checker** que verifica si la secuencia de instrucciones generada realmente ordena el stack correctamente.
 
-Este proyecto ha sido una introducción práctica al análisis de complejidad y la optimización de algoritmos. Se ha trabajado con Big O notation, 
-se han explorado diferentes estrategias de ordenación y se ha implementado una solución eficiente usando bitwise operations.
+## Consideraciones Finales
+
+Este proyecto ha sido una introducción práctica al análisis de complejidad y la optimización de algoritmos. Se ha trabajado con **Big O notation**, se han explorado diferentes estrategias de ordenación y se ha implementado una solución eficiente usando *bitwise operations*.
+
