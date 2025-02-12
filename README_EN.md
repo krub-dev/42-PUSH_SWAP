@@ -1,4 +1,6 @@
-# PUSH_SWAP
+<h1 align="center">
+  <img src="https://iili.io/2mYwfzG.png" alt="push swap header krub" width="1200" height="auto" style="align: bottom;"> 
+</h1>
 
 ## Description
 
